@@ -1,7 +1,7 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: terra-node-deployment
+  name: nodeterra-deployment
 spec:
   selector:
     matchLabels:
