@@ -1,0 +1,19 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: terra-node-deployment
+spec:
+  selector:
+    matchLabels:
+      app: terra-node
+  replicas: 3 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: terra-node
+    spec:
+      containers:
+      - name: terra-node
+        image: fterra/terra-node:1.0.1
+        ports:
+        - containerPort: 8080
