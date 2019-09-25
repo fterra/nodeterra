@@ -13,7 +13,7 @@ spec:
         app: terra-node
     spec:
       containers:
-      - name: terra-node
-        image: fterra/terra-node:1.0.1
+      - name: imagenodeterra
+        image: fterra/imagenodeterra:1.0.1
         ports:
         - containerPort: 8080
