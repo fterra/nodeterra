@@ -11,3 +11,4 @@ data:
   keys: | 
     image.public.key=771 
     rsa.public.key=42
+    nada=23
